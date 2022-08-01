@@ -132,7 +132,7 @@ ul.task-list{list-style: none;}
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#general-introduction-of-ms-dial5" id="toc-general-introduction-of-ms-dial5" class="nav-link active" data-scroll-target="#general-introduction-of-ms-dial5">General introduction of MS-DIAL5</a>
+  <li><a href="#全体的な-ms-dial5-のイントロダクション" id="toc-全体的な-ms-dial5-のイントロダクション" class="nav-link active" data-scroll-target="#全体的な-ms-dial5-のイントロダクション">全体的な MS-DIAL5 のイントロダクション</a>
   <ul class="collapse">
   <li><a href="#start-up-a-project-of-ms-dial5" id="toc-start-up-a-project-of-ms-dial5" class="nav-link" data-scroll-target="#start-up-a-project-of-ms-dial5">Start up a project of MS-DIAL5</a></li>
   <li><a href="#centroid-or-profile" id="toc-centroid-or-profile" class="nav-link" data-scroll-target="#centroid-or-profile">Centroid or Profile?</a></li>
@@ -166,23 +166,24 @@ ul.task-list{list-style: none;}
 
 </header>
 
-<section id="general-introduction-of-ms-dial5" class="level2">
-<h2 class="anchored" data-anchor-id="general-introduction-of-ms-dial5">General introduction of MS-DIAL5</h2>
-<p>The current MS-DIAL program provides a stream pipeline for untargeted metabolomics, lipidomics and proteomics. In this latest version, the user experience has been greatly improved with a new graphical interface and also due to the fact it is no longer necessary to convert raw MS data from different vendor formats into a common ABF format (which is still supported), but the data can now be imported directly (supported file formats and analytical techniques are summarized in Figure 1).</p>
+<section id="全体的な-ms-dial5-のイントロダクション" class="level2">
+<h2 class="anchored" data-anchor-id="全体的な-ms-dial5-のイントロダクション">全体的な MS-DIAL5 のイントロダクション</h2>
+<p>現在の MS-DIAL は、ノンターゲットメタボロミクス、リピドミクス、およびプロテオミクスのためのストリームパイプラインを提供しています。 MS-DIAL の最新バージョンでは、新しいグラフィカルインターフェイスによってユーザーエクスペリエンスが大幅に改善されており、異なるベンダーフォーマットから生の MS データを共通の ABF フォーマットに変換する必要がなくなり、直接インポートしていただけるようになりました。(サポートされているファイル形式や分析手法のまとめは Figure 1 になります。)</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Fig1%20Supported%20file%20formats%20and%20analytical%20techniques.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure 1 Overview of supported file formats and analytical techniques</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure 1 サポートされているファイル形式と分析手法の概要</figcaption><p></p>
 </figure>
 </div>
-<p>The latest version of MS-DIAL aims to be the most versatile tool for multiomics data analysis and therefore supports direct injection, many separation (GC, LC, CE, SFC), ionization (EI, ESI, MALDI), fragmentation (CID, HCD, ETD, ECD, EIEIO, EID, OAD) and MS/MS (DDA, SWATH, AIF) datasets (which are summarized in Figure 2). In addition, technological advances in fragmentation mechanisms such as electron-impact excitation of ions from organics (EIEIO) have also been taken into account, making it possible to work with these types of data to offer comprehensive structural identification of metabolites, lipids and proteins.</p>
+<p>MS-DIAL の最新バージョンは、マルチオミクスデータ解析のための最も用途の広いツールを目指しており、 ダイレクトインジェクション、多くの分離法 (GC、LC、CE、SFC)、イオン化法 (EI、ESI、MALDI)、フラグメンテーション法 (CID、HCD、ETD、ECD、EIEIO、EID、OAD) そして MS/MS (DDA、SWATH、AIF) データセットをサポートしています。(それらは Figure 2 にまとめられています。) さらに、有機物からのイオンの電子衝撃励起 (EIEIO) などのフラグメンテーション機構の技術的進歩も考慮されており、これらのタイプのデータを使用して、代謝産物、脂質、およびタンパク質の包括的な構造同定を提供することが可能になっています。</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Fig2%20MS-DIAL%205%20environment.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure 2 Summary of analytical techniques compatible with MS-DIAL 5</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure 2 MS-DIAL 5 が対応している分析手法のまとめ</figcaption><p></p>
 </figure>
 </div>
-<p>After data processing which includes peak picking, deconvolution, compound identification, and peak alignment, MS-DIAL provides several normalization methods (including LOWESS) and a multivariate analysis by principal component analysis (PCA). Finally, for further analysis by other programs, this program can export your result as table format (for SIMCA-P, MetaboAnalyst, and MetFamily etc.), and as several spectral formats including NIST, MassBank, and Mascot formats for compound identifications by MS-FINDER, CSI:FingerID, CFM-ID, MetFrag, and MetFamily etc. For the parameter explanations including the description of MS-DIAL algorithms, see also ‘MS-DIAL mathematics’ which can be downloaded at <a href="http://prime.psc.riken.jp/compms/msdial/download/mathematics/MS-DIAL%20FAQ-vs2.pdf" class="uri">http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/MS-DIAL%20FAQ-vs2.pdf</a></p>
+<p>ピークピッキング、デコンボリューション、化合物同定、およびピークアラインメントを含むデータ処理の後、MS-DIAL はいくつかの正規化方法(LOWESSを含む)と主成分分析(PCA)による多変量解析を提供します。 最後に、他のプログラムでさらに分析するために、MS-DIAL は結果を表形式でエクスポートできます。(SIMCA-P、MetaboAnalyst、そして MetFamily 等用に。) また NIST、MassBank、そして Mascot 形式を含む MS-FINDER、CSI:FingerID、CFM-ID、MetFrag、そして MetFamily 等による化合物同定のためのスペクトル形式にもエクスポートできます。</p>
+<p>MS-DIAL のアルゴリズムの記述を含むパラメータの説明については、 <a href="http://prime.psc.riken.jp/compms/msdial/download/mathematics/MS-DIAL%20FAQ-vs2.pdf" class="uri">http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/MS-DIAL%20FAQ-vs2.pdf</a> でダウンロードできる「MS-DIAL mathematics」も参照してください。</p>
 <section id="start-up-a-project-of-ms-dial5" class="level3">
 <h3 class="anchored" data-anchor-id="start-up-a-project-of-ms-dial5">Start up a project of MS-DIAL5</h3>
 <p>This tutorial demonstrates four projects, (1) GC/MS, (2) LC/MS or LC/MS/MS (DDA: data dependent acquisition), (3) LC/MS/MS (data independent acquisition), and (4) LC-Ion mobility for the explanation of parameters and required files. In this section, three projects are summarized and you will find a minimum requirement for these processes. The details for LC/MS/MS (DIA), LC/MS/MS (DDA), GC/MS, and LC-Ion mobility processing are described in Chapter 2, Chapter 3, Chapter 4, and Chapter 10 respectively. First you need to start a new project in MS-DIAL5, set up a folder to store your project files and point MS-DIAL5 to the folder where your raw data is stored (Figure 3).</p>
