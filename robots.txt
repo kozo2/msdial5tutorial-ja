@@ -1,1 +1,1 @@
-Sitemap: https://mtbinfo-team.github.io/msdial5tutorial/sitemap.xml
+Sitemap: https://kozo2.github.io/msdial5tutorial-ja/sitemap.xml
